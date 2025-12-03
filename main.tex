@@ -1,0 +1,66 @@
+\documentclass[10pt, a4paper, oneside]{ctexbook}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{braket}
+\usepackage{fancyhdr}
+\usepackage{mdframed}
+\numberwithin{equation}{section}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black
+}
+
+\fancyhf{}
+\fancyhead[L]{\footnotesize{\textbf{\leftmark}}} 
+\fancyhead[R]{} 
+\fancyfoot[L]{}
+\fancyfoot[C]{} 
+\fancyfoot[R]{\footnotesize{第 \thepage 页}}
+\renewcommand{\headrulewidth}{0.4pt}  
+\renewcommand{\footrulewidth}{0.4pt}
+
+\pagestyle{fancy}
+
+\title{\vspace*{-2cm}\textbf{}}
+\author{}
+\date{}  
+
+\linespread{1.2}
+
+\newenvironment{solution}{\begin{proof}[\bf 解]}{\end{proof}}
+\newenvironment{myproof}{\begin{proof}[\bf 证明]}{\end{proof}}
+
+\mdfdefinestyle{defstyle}{%
+    linecolor=black,
+    linewidth=1pt,
+    frametitlerule=true,
+    nobreak=true,
+}
+
+\mdtheorem[style=defstyle]{definition}{定义}
+\mdtheorem[style=defstyle]{theorem}{定理}
+\mdtheorem[style=defstyle]{lemma}{引理}
+\mdtheorem[style=defstyle]{corollary}{推论}
+\mdtheorem[style=defstyle]{example}{例}
+\mdtheorem[style=defstyle]{remark}{注}
+\mdtheorem[style=defstyle]{proposition}{命题}
+\numberwithin{definition}{section}
+\numberwithin{theorem}{section}
+\numberwithin{lemma}{section}
+\numberwithin{example}{section}
+\numberwithin{remark}{section}
+\numberwithin{corollary}{section}
+\numberwithin{proposition}{section}
+
+\newcommand{\dd}{\mathrm{d}}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\end{document}
+
